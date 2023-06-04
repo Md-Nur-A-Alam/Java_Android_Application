@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Mean"
+        android:layout_width="329dp"
+        android:layout_height="53dp"
+        android:text="Mean"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/MeasuresOfSpread"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.5"
+        app:rippleColor="#3C3B86"
+        app:strokeColor="#3C3B86" />
+
+    <Button
+        android:id="@+id/MeasuresOfSpread"
+        android:layout_width="329dp"
+        android:layout_height="53dp"
+        android:text="Kurtosis and Skewed"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Median"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Mean"
+        app:layout_constraintVertical_bias="0.5"
+        app:rippleColor="#3C3B86"
+        app:strokeColor="#3C3B86" />
+
+    <Button
+        android:id="@+id/Median"
+        android:layout_width="329dp"
+        android:layout_height="53dp"
+        android:text="Median"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Quartiles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MeasuresOfSpread"
+        app:layout_constraintVertical_bias="0.5"
+        app:rippleColor="#3C3B86"
+        app:strokeColor="#3C3B86" />
+
+    <Button
+        android:id="@+id/Quartiles"
+        android:layout_width="329dp"
+        android:layout_height="53dp"
+        android:text="Quartiles"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Deciles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Median"
+        app:layout_constraintVertical_bias="0.5"
+        app:rippleColor="#3C3B86"
+        app:strokeColor="#3C3B86" />
+
+    <Button
+        android:id="@+id/Deciles"
+        android:layout_width="329dp"
+        android:layout_height="53dp"
+        android:text="Deciles"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Percentile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Quartiles"
+        app:layout_constraintVertical_bias="0.5"
+        app:rippleColor="#3C3B86"
+        app:strokeColor="#3C3B86" />
+
+    <Button
+        android:id="@+id/Percentile"
+        android:layout_width="329dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="168dp"
+        android:text="Percentile"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#3C3B86"
+        app:strokeColor="#3C3B86" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="332dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/input_bg"
+        android:text="Welcome to StatisLab"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
